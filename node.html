@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="node.css">
+	<title>Solar Calculator Project</title>
+</head>
+<body>
+	<header>
+		<h2> Team Nike</h2>
+	</header>
+	<h1>
+		Solar Calculator
+	</h1>
+	<p>
+		Calculate the average daily KWh hour output in your are based on a well installed solar system
+	</p>
+	<div class="arrange">
+		<div class="input">
+			<label>
+				<h2>ELECTRONIC</h2> <br><span> Name of electronic </span><br>
+			</label>
+			<input type="text" name="electronic"><br>
+		</div>
+		<div class="input">
+			<label>
+				<h2>POWER USE</h2> <br><span> Amount in watts </span><br>
+			</label>
+			<input type="text" name="watts"><br>
+		 </div>
+		<div class="input">
+			<label>
+				<h2>HOURS IN USE</h2> <br><span> No. of Hours </span><br>
+			</label>
+			<input type="text" name="hours">
+			<button><img src="image/png.png" style="width: 15px"></button><br>
+		</div>
+	</div>
+	<table>
+		<tr>
+			<td class="data"> Television </td>
+			<td> 300 watts </td>
+		</tr>
+		<tr>
+			<td class="data"> Refrigerator </td>
+			<td> 100 watts </td>
+		</tr>
+		<tr>
+			<td class="data"> Pressing Iron </td>
+			<td> 200 watts </td>
+		</tr>
+		<tr>
+			<td class="data" > Air Condition</td>
+			<td> 400 watts </td>
+		</tr>
+		<tr>
+			<td class="data"> Total </td>
+			<td id="border"> 1000watts </td>
+		</tr>
+	</table>
+	<button class="button"> Calculate</button>
+</body>
+</html>
