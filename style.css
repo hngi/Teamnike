@@ -1,0 +1,58 @@
+body {
+	font-family: Century Gothic , Sans-serif !important;
+	align-content: center !important; 
+}	
+
+h1 {
+	color: #DB4040;
+}
+
+.container {
+	align-content: center;
+	text-align: center;
+}
+
+.navbar {
+	background-color: #524E4E;
+	color: #FFFFFF;
+	text-align: left;
+	padding: 1% 1% 1% 1%;
+	font-size: 1.5em;
+}
+#legend {
+	margin-top: 20 !important;
+}
+
+.smalltitle {
+	font-weight: 100;
+	color: #DB4040;
+}
+
+.des-text {
+	font-weight: 100;
+}
+
+.btn1 {
+	border: 2px solid #000000;
+	/*border: none;*/
+	padding: 5px 100px;
+	text-align:center;
+	text-decoration: none;
+	display:inline-block;
+	font-size: 1.5em;
+	background-color: #FFFFFF;
+	font-family: Century Gothic , Sans-serif;
+	color: #000000;
+}
+
+.btn-plus {
+	border: 2px solid #000000;
+	/*padding: 5px 100px*/;
+	text-align:center;
+	text-decoration: none;
+	display:inline-block;
+	font-size: 1.5em;
+	background-color: #FFFFFF;
+	font-family: Century Gothic , Sans-serif;
+	color: #000000;
+}
