@@ -15,6 +15,9 @@ h1 {
 	color: #DB4040;
 }
 
+.modal-dialog {
+    margin-top: 50% !important;
+}
 
 .row {
 	margin-right: 0px;
@@ -144,6 +147,9 @@ h1 {
 		margin-left: 0px !important;
 		padding-left: 0px !important;
 		border-radius: 0px !important;
+	}
+	.modal-dialog {
+		margin-top: 19% !important;
 	}
 
 
