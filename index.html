@@ -1,4 +1,48 @@
 <!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Nike Solar Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head> 
+    <body>
+        <div class="logo">Team Nike</div>
+        <br>
+        <br>
+        <span style="color: red; font-size: 38px;">Solar Calculator</span>
+        <br>
+        <br>
+        <div class="intro">Calculate the average daily KWh hour output in Your Area based on a well installed Solar System</div> 
+        <br>
+        <br>
+        <br>
+        <form>
+                <div class="box1">
+                    <span style="font-size: 24px; font-weight: bold;">ELECTRONIC</span>
+                    <p><label for="electronics">Name of Electronic</label></p>
+                    <input id="electronics" name="electronics" required="required" type="text"/>
+                </div>
+                <div class="box2">
+                    <span style="font-size: 24px; font-weight: bold;">POWER USE</span>
+                    <p><label for="powerUse">Amount in Watts</label></p>
+                    <input id="powerUse" name="powerUse" required="required" type="text"/>
+                </div>
+                <div class="box3">
+                    <span style="font-size: 24px; font-weight: bold;">HOURS IN USE</span>
+                    <p><label for="hoursInUse">No. of Hours</label></p>
+                    <input id="hoursInUse" name="hoursInUse" required="required" type="text"/>
+                </div>
+                <div style="float:left;">
+                    <span style="font-size: 30px; font-weight: bold;"><br></span>
+                    <p><br></p>
+                    <button id="moreButton" name="button" type="button">+</button>
+                </div> 
+            <br style="clear:both;"/>
+            <div class="output">Output goes here</div> <br>
+            <input class="calculate" type="submit" value="Calculate">
+        </form>
+    </body>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
