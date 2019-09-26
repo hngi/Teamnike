@@ -65,6 +65,9 @@ let addItems = () => {
 
         powersum();
         calcu_function()
+        power_use.value = '';
+        electronic.value = '';
+        hours_use.value = '';
         /*FOR ONLY DEBUGGING PURPOSES */
         //console.log('that works');
         //console.log(powerarr);
