@@ -3,6 +3,33 @@
 	/* padding: 0px !important; */
 	/* margin-right: 0px !important;	 */
 }
+/* toooltip css right here for the delete button */
+.toooltip {
+    position: relative;
+    /* display: inline-block; */
+    /* border-bottom: 1px dotted black; */
+}
+
+.toooltip .toooltiptext {
+    display: none;
+    /*visibility: hidden;*/
+    width: 120px;
+    background-color: rgba(107, 103, 103, 0.308);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.toooltip:hover .toooltiptext {
+    display: block;
+    /*visibility: visible;*/
+}
+/* the toooltip css ends right here */
 
 body {
 	font-family: Century Gothic, Sans-serif !important;
