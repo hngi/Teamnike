@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thank You</title>
+  <meta name="title" content="Thank You">
+  <meta name="description" content="Thank You"> 
+  <!-- <link rel="canonical" 
+
+href="" /> -->
+  <link rel="icon" href="https://https://img.icons8.com/color/48/000000/detective-hat.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 style="text-align: center;">
+    Thanks For Reaching Out To Team Nike
+  </h1>
+  <h3>Here's Your Message Info</h3>
+  <p>
+    <strong>Name:</strong> <?php echo $_POST['name'];?><br>
+    <strong>Email:</strong> <?php echo $_POST['email'];?><br>
+    <strong>Message:</strong> <?php echo $_POST['message'];?>
+  </p>
+  
+<?php
+if (isset($_POST['submitted'])) {
+     $myfile = fopen("data.txt", "a+");
+    $name = $_POST['name']. "\n";
+    fwrite($myfile, $name);
+$message = $_POST['message']. "\n";
+    
+fwrite($myfile, $message);
+    
+      $title = $_POST['title']. "\n";
+    fwrite($myfile, $title);
+
+    $email = $_POST['email']. "\n";
+    
+
+fwrite($myfile, $email);
+    fclose($myfile);
+}
+?>
+  
+
+  </body>
+</html>
