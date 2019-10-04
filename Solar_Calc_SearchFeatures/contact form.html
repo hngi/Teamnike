@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		FAQ with aContact Form
+	</title>
+	<meta charset="utf-8" />
+	<meta name="title" content="Odekunle Johnson Jibola - CV">
+  <meta name="description" content="Resumé of Odekunle Johnson Jibola, junior web developer"> 
+  <meta name="keywords" content="Odekunle Johnson Jibola cv,cv,web developer,web developer resume">
+  <meta name="author" content="Odekunle Johnson Jibola https://emmanuel.name.ng">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://Odekunle Johnson Jibola-cv.netlify.com">
+  <meta property="og:title" content="Odekunle Johnson Jibola - CV">
+  <meta property="og:description" content="Resumé for Odekunle Johnson Jibola, junior Web Developer">
+  <meta property="og:image" content="https://res.cloudinary.com/ratselaft/image/upload/v1567685548/WhatsApp_Image_2018-10-10_at_13.34.56_o734k7.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://ratselaft-cv.netlify.com">
+  <meta property="twitter:title" content="Odekunle Johnson Jibola - CV">
+  <meta property="twitter:description" content="View the résumé of Odekunle Johnson Jibola - Web Developer">
+  <meta property="twitter:image" content="https://res.cloudinary.com/ratselaft/image/upload/v1567685548/WhatsApp_Image_2018-10-10_at_13.34.56_o734k7.jpg">
+	<link rel="stylesheet" href="contact form.css">
+	<link rel="stylesheet" type="text/css" href="contact form.js">
+</head>
+
+<body>
+	<header>
+		<div class="details" id="returnup">
+			<h1><strong> Solar Calculator</strong></h1><em> Make the World Natural</em>
+		</div>
+		<img src="image\solarstructure.jpg" alt="Ratselaft Image">
+	</header>
+	<ul class="tabs group">
+		<li><a class="active" href="#form">Contact Form</a></li>
+		<li><a href="faq.html">FAQ</a></li>
+		<li><a href="homepage.html"> Home</a></li>
+	</ul>
+	<h2>
+		WELCOME, Learn How Solar Works
+	</h2>
+	<p class="parag">
+		Solar energy is a tried and tested power source that is already being used around the world for numerous commercial, industrial, government and domestic applications. It is powering water pumps in African villages, weather stations in the Antarctic and satellites in space! 
+	</p>
+	<center>
+		<img id="image_central" src="image\workingsolar.jpg" width="120px" height="50px" alt="Solar">
+	</center>
+	<p class="parag">
+		It works by transforming the energy from the sun into a reusable form of electricity, a process known as Photovoltaic (or PV for short). Your Solar panel acts as a collecting tray, helping you catch the sun’s rays. The bigger the panel, the more energy you can collect. The energy collcted is stored for your future use in a battery.
+		Sometimes you collect more energy than you actually need so with larger panels a voltage regulator should be fitted to control the flow of energy and prevent battery damage.<br>
+		It would be hard to find a more environmentally friendly power supply. Clean and green, solar power is a renewable, sustainable and non-polluting source of energy.<br> It is easy to see the appeal of solar power for domestic use. Low maintenance and long lasting, it is a highly cost-effective and reliable energy supply.<br> We are always available to enlighten you and discuss about your opportunities in Solar Power
+	</p>
+	<section id="contact-me">
+		<div class="form-header">
+			<h1> Get in touch with us </h1>
+			<p id="space">
+				I would love to get a feedback from you.
+			</p>
+		</div>
+		<form method="post" action="ratsel.php" id="form">
+			<div>
+				<select id="title" class="title" name="title">
+					<option value="select title">Select Title</option>
+					<option value="Mr">Mr</option>
+					<option value="Mrs">Mrs</option>
+					<option value="Ms">Ms</option>
+					<option value="Dr">Dr</option>
+				</select>
+			</div>
+			<div>
+				<input id="text-input" type="text" class="name content" minlength="4" name="name" placeholder="Full Name" required minlength="4" min="4">
+			</div>
+			<div>
+				<input  type="email" class="email entry" name="email" placeholder="E-mail Address" required>
+			</div>
+			<div>
+				<textarea class="message entry" name="message" minlength="20" placeholder="Write Message Here">
+				</textarea>
+			</div>
+			<label id="lab"> * What is 2+2? (Anti-spam)</label>
+			<input type="number" name="human" id="lab" placeholder="Type Here">
+
+			<div>
+				<button type="submitted" class="submit entry" name="submit">Submit
+				</button>
+			</div>	
+		</form>
+	</section>
+	<footer>
+		<h1>
+			Made By Team Nike
+		</h1>
+	</footer>
+</body>
+<script type="text/javascript">
+	(function($) {
+		var tabs =  $(".tabs li a");
+		tabs.click(function() {
+			var content = this.hash.replace('/','');
+			tabs.removeClass("active");
+			$(this).addClass("active");
+			$("#content").find('p').hide();
+			$(content).fadeIn(200);
+		};
+
+};
+(jQuery);
+</script>
+</html>
