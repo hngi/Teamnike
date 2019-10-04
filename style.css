@@ -62,9 +62,17 @@ h1 {
 	padding-left: 0px;
 	padding-bottom: 20px !important;
 }
-
+#doc-title li{
+	list-style-type: none;
+	text-decoration: none;
+	padding-right: 10px;
+}
+a{
+	text-decoration: none;
+	list-style-type: none;
+}
 .navbar {
-	background-color: #524E4E;
+	background-color:rgb(173, 216, 230);
 	color: #FFFFFF;
 	text-align: left;
 	padding: 1% 1% 1% 1%;
@@ -177,8 +185,10 @@ h1 {
 #doc-title {
 	color: #FFFFFF !important;
 	text-align: right !important; 
-	margin: 50;
 	padding-left: 30px;
+	margin: 20px;
+	display: block;
+	justify-content: right;
 
 }
 
@@ -205,7 +215,10 @@ a:active {
 	.modal-dialog {
 		margin-top: 19% !important;
 	}
-
+	#doc-title{
+		text-align: right;
+		display: block;
+	}
 
 	.navbar {
 		border-radius: 0px;
@@ -226,4 +239,9 @@ a:active {
 	
 	}
 	
+}
+@media (max-width: 800px){
+	#doc-title{
+		background-color: yellow;
+	}
 }
