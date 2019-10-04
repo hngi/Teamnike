@@ -23,7 +23,7 @@
 			<div>
 				<p class = "des-text">Calculate the average daily kWh per hour ouput in your home based on a well installed solar system</p>
 			</div>
-			<div class="row input_container">
+			<div class="row input_container inputform visible">
 				<form class = "form" method="post" action="" role="form">
 						<div class = "col-xs-12 col-sm-3">
 						<h4>ELECTRONIC</h4>
@@ -42,8 +42,31 @@
 						<!-- <label>Number of Hours</label> -->
 						<input type="number" id="hours_use" required class="form-control" name="hours" placeholder="Number of Hours">
 						</div>
-						<div class="col-xs-12 col-sm-3">
+						<div class="col-xs-12 col-sm-3" >
 							<button class="add_btn" id="add_btn" type="button"><span class="plus-sign">+</span></button>
+						</div>
+				</form>
+			</div>
+			<div class="row input_container outputform hidden">
+				<form class ="form" method="post" action="" role="form">
+						<div class = "col-xs-12 col-sm-3">
+						<h4>ELECTRONIC</h4>
+						<input type="text" id="elect_edit" required class="form-control" name="electronic" placeholder="Name of Electronic">
+						</div>
+
+						<div class = "col-xs-12 col-sm-3">
+						<h4>POWER USE</h4>
+						<!-- <label>Amount in Watts</label> -->
+						<input type="number" id="power_edit" required class="form-control" name="power" placeholder="Amount in Watts">
+						</div>
+	
+						<div class = "col-xs-12 col-sm-3">
+						<h4>HOURS IN USE</h4>
+						<!-- <label>Number of Hours</label> -->
+						<input type="number" id="hours_edit" required class="form-control" name="hours" placeholder="Number of Hours">
+						</div>
+						<div class="col-xs-12 col-sm-3">
+							<button id="edit_btn" class="add_btn" type="button"><span class="glyphicon glyphicon-save">save</span></button>
 						</div>
 				</form>
 			</div>
