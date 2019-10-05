@@ -1,0 +1,26 @@
+body {
+	font-family: Century Gothic, Sans-serif !important;
+	align-content: center !important; 
+}
+
+.navbar {
+	background-color:rgb(173, 216, 230);
+	color: #FFFFFF;
+	text-align: left;
+	padding: 1% 1% 1% 1%;
+	font-size: 1.5em;
+}
+
+h1 {
+	font-weight: 100;
+	color: #DB4040;
+}
+
+a {
+	text-decoration: none;
+	font-display: block;
+}
+
+a:hover {
+	color: #DB4040;
+}
