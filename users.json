@@ -1,0 +1,25 @@
+{
+    "users": [
+        [],
+        {
+            "Username": "dboi12",
+            "Email": "ogomdb@gmail.com",
+            "Password": "test1"
+        },
+        {
+            "Username": "danielawe1900",
+            "Email": "test123@mail.com",
+            "Password": "test1"
+        },
+        {
+            "Username": "danielawe1900",
+            "Email": "daniel@mailtru.com",
+            "Password": "test1"
+        },
+        {
+            "Username": "testlogin",
+            "Email": "testlogin@mail.ng",
+            "Password": "testlogin" 
+        }
+    ]
+}
