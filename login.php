@@ -180,7 +180,7 @@
 				<div class="invalid-feedback"><?php if (isset($msg)) {
 													echo  $msg;
 												} ?> </div>
-				<div class="form-group">
+				<div class="form-group"> 
 					<label class="sr-only" for="uid">Email</label>
 					<input class="form-control" type="text" name="email" placeholder="Email">
 				</div>

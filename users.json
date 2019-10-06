@@ -19,7 +19,7 @@
         {
             "Username": "testlogin",
             "Email": "testlogin@mail.ng",
-            "Password": "testlogin"
+            "Password": "testlogin" 
         }
     ]
 }

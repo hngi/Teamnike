@@ -38,7 +38,7 @@ nav {
     font-size: 16px;
     margin: 0 0 0 20px;
     text-transform: uppercase !important;
-    text-decoration: none;
+    text-decoration: none; 
 }
 
 .navItems a:hover {

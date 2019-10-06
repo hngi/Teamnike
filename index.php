@@ -33,7 +33,7 @@ if (isset($_SESSION['Username'])) {
 		<div class="navItems">
 			<a href="index.php">Home</a>
 			<a href="doc.html">Documentation</a>
-			<a href="faq.html">Faq</a>
+			<a href="faq.html">Faq</a> 
 			<a href="contact form.html">Contact us</a>
 			<a class="btn btn-sm btn-danger" href="logout.php">Logout</a>
 		</div>

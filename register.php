@@ -177,7 +177,7 @@ if (isset($_POST['reg'])) {
 				<div class="form-group">
 					<label class="sr-only" for="uid">Username</label>
 					<input id="uid" class="form-control" type="text" name="uid" placeholder="Username">
-				</div>
+				</div> 
 				<div class="form-group">
 					<label class="sr-only" for="email">Email</label>
 					<input id="email" class="form-control" type="email" name="email" placeholder="Email">
