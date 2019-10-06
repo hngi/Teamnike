@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,54 +8,63 @@
 	<title>Nike SC Documentation</title>
 	<link rel="stylesheet" href="styles/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
-	
+	<link rel="stylesheet" href="nav.css">
+
 </head>
+
 <body>
-		<div class = "container">
-			<div class = "navbar row flex-row">
-			<div>
-					HNGi6 Team Nike
-			</div>
-			<div id = "doc-title">
-				<a href="doc.html"><h5>Documentation</h5></a>
-			</div>
-			<div id = "doc-title">
-				<a href="index.html"><h5>Back To Calculator</h5></a>
-			</div>
+	<nav>
+		<div class="logo">
+			<p>NIKE</p>
 		</div>
-
-	<h1>Introduction</h1>
-	<p>Using Solar Calculator Web App - Designed and deployed by HNGi6 team Nike members.</p>
-
-	<h2>Interface</h2>
-	<p>The web app comes with a rather simple and easy to use interface. The Navigation bar holds the title and the link to this documentation.<br>
-	Just below, on the webpage, users can find the set of input form ready to get their Electronic data.</p>
-
-	<h2>How To Use</h2>
-	<p>There are 3 input fields. "Electronic" , "Power Use" , "Hours In Use".
-		<ul style = "list-style-type: none">
-			<li>
-				The Electronic field accepts the name of electronic device.
-			</li>
-			<li>
-				The Power Use field accepts the amount of power a device use in Watts.
-			</li>
-			<li>
-				The Hours In Use field accepts the number of hours the device will run.
-			</li>
-		</ul>
-
-	All input fields are required.
-	After user inputs these parameters and click add, it will be added and displayed. Users can remove or add more devices, when satisfied, the "Calculate" button is then used to compute data.</p>
-	<br>
-	<br>
-	<p>You can also read on <a href="https://lucid.blog/yutee_okon/post/team-nike-solar-calculator-documentation-097" #link-2>Lucid</a></p>
-
+		<div class="navItems">
+			<a href="index.php">Home</a>
+			<a href="doc.html">Documentation</a>
+			<a href="faq.html">Faq</a>
+			<a href="contact%20form.html">Contact us</a>
+			<a class="btn btn-sm btn-danger" href="logout.php">Logout</a>
 		</div>
-	
+	</nav>
+
+	<div class="container">
+
+		<h1>Introduction</h1>
+		<p>Using Solar Calculator Web App - Designed and deployed by HNGi6 team Nike members.</p>
+
+		<h2>Interface</h2>
+		<p>The web app comes with a rather simple and easy to use interface. The Navigation bar holds the title and the
+			link to this documentation.<br>
+			Just below, on the webpage, users can find the set of input form ready to get their Electronic data.</p>
+
+		<h2>How To Use</h2>
+		<p>There are 3 input fields. "Electronic" , "Power Use" , "Hours In Use".
+			<ul style="list-style-type: none">
+				<li>
+					The Electronic field accepts the name of electronic device.
+				</li>
+				<li>
+					The Power Use field accepts the amount of power a device use in Watts.
+				</li>
+				<li>
+					The Hours In Use field accepts the number of hours the device will run.
+				</li>
+			</ul>
+
+			All input fields are required.
+			After user inputs these parameters and click add, it will be added and displayed. Users can remove or add
+			more devices, when satisfied, the "Calculate" button is then used to compute data.</p>
+		<br>
+		<br>
+		<p>You can also read on <a
+				href="https://lucid.blog/yutee_okon/post/team-nike-solar-calculator-documentation-097" #link-2>Lucid</a>
+		</p>
+
+	</div>
+
 
 	<script src="jquery/jquery.min.js"></script>
 	<script src="styles/js/bootstrap.min.js"></script>
 	<script src="action.js"></script>
 </body>
+
 </html>
