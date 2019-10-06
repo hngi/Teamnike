@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style-type: circle;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: inherit;
+  height: 200px;
+  align-items: center;
+  margin-bottom: 10px;
+  background: rgba(173, 216, 230, 0.404);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.details{
+  width: 30%;
+}
+.content {
+  background: #fff;
+}
+
+header img {
+  height: 95%;
+  width: 70%;
+  border-radius: 5px;
+}
+ul{
+  width: 60%;
+}
+ul.tabs {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 100px;
+  margin: 0 auto;
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+}
+ul.tabs li {  
+  float: left;
+  width: 30%;
+  list-style: none;
+  line-height: 15px;
+
+}
+p.parag{
+  margin: 10px;
+  font-family: Helvetica;
+  font-size: 1.2em;
+}
+#image_central{
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  height: 30%;
+}
+ul.tabs li a {
+  position: relative;
+  display: block;
+  height: 40px;
+  margin-top: 40px;
+  padding: 10px 0 0 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  text-align: center; 
+  text-decoration: none;
+  color: #ffffff;
+  background: rgb(14,14,60);
+  box-shadow: 8px 12px 25px 2px rgba(0,0,0,0.4);
+  border: 0px solid #000000;
+  transition: padding 0.2s ease, margin 0.2s ease;
+}
+.tabs li:first-child a {
+  z-index: 2;
+  -webkit-border-top-left-radius: 8px;
+  -moz-border-radius-topleft: 8px;
+  border-top-left-radius: 8px;
+}
+.tabs li:nth-child(2) a {
+  z-index: 1;
+  box-shadow: 2px 8px 25px -2px rgba(0,0,0,0.3);
+  -webkit-border-top-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+ul.tabs li a:hover {
+  margin: 35px 0 0 0;
+  padding: 10px 0 5px 0;
+}
+ul.tabs li a.active {
+  margin: 30px 0 0 0;
+  padding: 10px 0 10px 0;
+  background: rgb(9, 8, 53);;
+  color: rgb(255, 56, 65);;
+  /*color: #ff6831;*/
+  z-index: 4;
+  outline: none;
+}
+.group:before{
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.group:after {
+    clear: both;
+    content: " ";
+    display: table;
+}
+section {
+  padding: 5px 10px 10px 10px;
+  background: rgba(134, 126, 126, 0.143);
+  margin-top: 10px;
+  width: 100%;
+  margin: auto;
+}
+
+.declaration {
+  border-left: 5px solid green;
+  padding-left: 5px;
+  background: rgb(236, 226, 226);
+  margin: 10px 0;
+}
+#lab{
+  display: block;
+  border: 5px;
+  margin: 5px 0px 5px 0px;
+  font-size: 17px;
+  font-weight: bold;
+}
+#skills .list {
+  background: #fff;
+  padding-left: 20px;
+}
+
+footer {
+  text-align: center;
+  height: 50px;
+  background: #000;
+  color: rgb(160, 148, 148);
+  margin-top: 10px;
+}
+
+#contact-me {
+  width: 58%;
+  padding: 0;
+  margin-top: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: rgb(255, 56, 65);
+}
+p#space{
+  letter-spacing: 1px;
+  font-weight: bold;
+  width: 100%;
+
+}
+
+.form-header {
+  background: rgb(9, 8, 53);
+  color: white;
+  padding: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 5px;
+}
+
+form div {
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div input {
+  width: 100%;
+  height: 100%;
+  border-top: none;
+  padding-left: 5px;
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid;
+  border-left: 2px solid;
+  color: rgb(0, 0, 0);
+  background: none;
+}
+
+div textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  border-top: none;
+  padding-left: 5px;
+  border-top: none;
+  border-right: none;
+  border-left: 2px solid;
+  background: none;
+  color: rgb(0, 0, 0);
+  border-bottom: 1px solid;
+
+}
+#text-input{
+  background: none;
+}
+
+div button {
+  width: 60%;
+  height: 80%;
+  font-size: 1.2em;
+  border: none;
+  background: rgb(71, 98, 71);
+  color: white;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+div button:hover {
+  background: green;
+  transition: background .3s linear;
+}
+
+div select {
+  width: 100%;
+  height: 100%;
+  font-size: 1.2em;
+  border-top: none;
+  border-right: none;
+  border-left: 2px solid;
+  border-bottom: 1px solid;
+  background: none;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  padding-left: 5px;
+
+}
