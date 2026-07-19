@@ -1,0 +1,92 @@
+<?php
+
+$data = json_decode(file_get_contents("users.json"), true);
+// Start session
+session_start();
+if (isset($_SESSION['Username'])) {
+  $user['Username'] = $_SESSION['Username'];
+} else {
+  header('location: login.php');
+  exit();
+}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome</title>
+	<meta http-equiv = "refresh" content = "5; url = index.php" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+body {
+  text-align:center;
+  background-image: url(solarwall2.jpeg);
+  color:#555;
+  font-family:'Roboto';
+  font-weight:300;
+  font-size:32px;
+  padding-top:30vh;
+  height:100vh;
+  overflow:hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0,0,0);
+}
+
+div {
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+div:first-of-type {    /* For increasing performance 
+                       ID/Class should've been used. 
+                       For a small demo 
+                       it's okaish for now */
+  animation: showup 7s infinite;
+}
+
+div:last-of-type {
+  width:0px;
+  animation: reveal 7s infinite;
+}
+
+div:last-of-type span {
+  margin-left:-355px;
+  animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:355px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:355px;}
+}
+
+
+	</style>
+</head>
+<body>
+<div><h1>WELCOME</h1></div> 
+<div> 
+  <span>TO NIKE SOLAR CALC</span>
+</div>
+
+</body>
+</html>
