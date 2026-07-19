@@ -1,0 +1,95 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+
+}
+
+.container-1 {
+	align-content: center;
+	text-align: center;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 20px !important;
+}
+
+.navbar {
+	background-color: #524E4E;
+	color: #FFFFFF;
+	text-align: left;
+	padding: 1% 1% 1% 1%;
+    font-size: 1.5em;
+    font-family: Century Gothic, Sans-serif !important;
+}
+
+/* height of first section */
+.height {
+    min-height: 100vh;
+}
+
+/* height of second section */
+.height-2 {
+    min-height: 70vh;
+}
+
+/* Background for first section */
+.showcase {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://res.cloudinary.com/thecodingarchitect/image/upload/v1570218305/showcase1_oeaohf.jpg)center/cover no-repeat fixed;
+  
+}
+
+.showcase-1 {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://res.cloudinary.com/thecodingarchitect/image/upload/v1570218303/showcase2_zob36a.jpg)center/cover no-repeat fixed;
+  
+}
+
+/* Adjusting font-size for heading1 and paragraph for first section */
+.col-9 h1 {
+    font-size: 4rem;
+}
+.col-9 p {
+    font-size: 1.3rem;
+}
+
+/* removing border radius from bootstrap button */
+.register {
+    border-radius: 0 !important;
+    font-size: 1.6rem;
+}
+
+
+.error {
+	width: 100%;
+	margin: 0px auto;
+	padding: 1px;
+	border: 1px solid red;
+	color: red;
+	background: #f33f3f;
+	border-radius: 5px;
+	text-align: center;
+	
+  
+  }
+
+#doc-title {
+	color: #FFFFFF !important;
+	text-align: right !important; 
+	margin: 50;
+	padding-left: 30px;
+
+}
+
+#doc-title a:link {
+	color: #DB4040 !important;
+}
+ /* #doc-title a:visited {
+	color: blue !important;
+} */ 
+#doc-title a:hover {
+	color: #FFFFFF !important;
+}
+#doc-title a:active {
+	color: #FFFFFF !important;
+}
