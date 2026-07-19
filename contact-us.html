@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+				<meta charset="utf-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+				<link rel="stylesheet" href="contact-us.css">
+				<script src="action.js"></script>
+
+				<title></title>
+</head>
+
+<body>
+		
+	<div class="container">
+		<div class="navbar row">
+			<h1> Contact Us </h1>
+		</div>
+		<hr>
+		<form action="action.php" method="post" name="contactUs" onsubmit="return contactUs()">
+			<div class="row">
+				<div class="col-md-6 col-xl-6" >
+					<div class="form-group">
+						<label>Name:</label>
+						<input type="text" class="form-control" name="name" required autofocus>
+					</div>
+					<div class="form-group">
+						<label>Telephone(Optional):</label>
+						<input type="tel" class="form-control" name="tel">
+					</div>
+					<div class="form-group">
+						<label>Email:</label>
+						<input type="email" class="form-control" required name="email">
+					</div>
+					<div class="form-group">
+						<label>Message:</label>
+						<textarea class="form-control" rows="5" name="message"></textarea>
+					</div>
+					<div class="form-group">
+						<button class="btn btn-primary">Submit</button>
+					</div>
+				</div>
+				<div class="form-group">
+					<a href="homepage.html" target="_self">Return to Calculator</a>
+				</div>
+			</div>
+		</form>
+
+	</div>		
+</body>
+</html>
